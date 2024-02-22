@@ -1,0 +1,20 @@
+@import './_variables.scss';
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    font-size: 20px;
+    font-family: $font-primary, $font-secondary;
+    display: inline-flex;
+    align-items: center;
+    color: $secondary-color;
+    transition: transform 0.3s ease;
+}
+
+/* Example hover effect */
+.icon-button:hover {
+    transform: scale(2.0);
+    
+}

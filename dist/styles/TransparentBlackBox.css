@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=UnifrakturCook:wght@700&display=swap");
+.hero {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* slightly reduced width */
+  max-width: 500px; /* max-width to constrain the box size on larger screens */
+  height: auto; /* height set to auto to contain content */
+  min-height: 20%; /* minimum height to ensure box visibility */
+  border: 2px solid #00FFA3;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  color: white;
+  box-sizing: border-box; /* This ensures padding is included in width */
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif, "UnifrakturCook", cursive;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 1rem; /* default font size */
+  color: #00FFA3;
+  margin-bottom: 20px;
+  padding: 0; /* Adjust padding as needed */
+}
+
+.use-mochi-button {
+  font-family: "Nunito Sans", sans-serif, "UnifrakturCook", cursive !important; /* Force the font family */
+  background-color: #00FFA3;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 0.8rem; /* smaller font size for mobile */
+    padding: 0 10px; /* add padding to prevent text touching the edges */
+    overflow-wrap: break-word; /* ensures text breaks to prevent overflow */
+  }
+  .use-mochi-button {
+    font-size: 0.9rem; /* smaller font size for the button on mobile */
+    padding: 8px 16px; /* smaller padding for the button on mobile */
+  }
+  .hero {
+    margin-top: 10%;
+  }
+}

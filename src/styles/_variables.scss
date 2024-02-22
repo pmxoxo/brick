@@ -1,0 +1,31 @@
+// Importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=UnifrakturCook:wght@700&display=swap');
+
+// Define your color palette
+$primary-color: #03E1FF; // Example primary color #00FFA3
+$secondary-color: #00FFA3; // Example secondary color
+$accent-color: #DC1FFF; // Example accent color #03E1FF
+
+// Set CSS custom properties for colors
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+}
+
+// Typography
+$font-primary: 'Nunito Sans', sans-serif; // Primary font, using Nunito Sans
+$font-secondary: 'UnifrakturCook', cursive; // Secondary font, using UnifrakturCook
+
+// Spacing scale (can be used for margins, padding, gaps, etc.)
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Breakpoints for responsive design
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

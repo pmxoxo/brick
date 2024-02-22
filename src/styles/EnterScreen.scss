@@ -1,0 +1,58 @@
+@import './_variables.scss';
+
+.enter-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  font-family: $font-primary, $font-secondary; /* Apply Hachi Maru Pop font */
+  text-align: center; /* Center text horizontally */
+  z-index: 2000; /* Increased z-index to be above the navbar */
+}
+
+.enter-header {
+  font-family: $font-primary, $font-secondary; /* Apply Hachi Maru Pop font */
+  color: $primary-color; /* Purple color for the text */
+  font-size: 5rem; /* Adjusted font size for the header */
+  margin-bottom: 1rem; /* Space between the header and the button */
+  z-index: 2001; /* Above the animated overlay */
+}
+
+.enter-button {
+  font-family: $font-primary, $font-secondary; /* Apply Hachi Maru Pop font */
+  background-color: $primary-color; /* Purple background for the button */
+  color: #000; /* White text for the button */
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem; /* Adjusted font size for button text */
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2001; /* Above the animated overlay */
+}
+
+.enter-button:hover {
+  background-color: $primary-color; /* Lighter purple on hover */
+}
+
+::selection {
+  background-color: $primary-color;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .enter-header {
+    font-size: 3rem; /* Smaller font size for mobile */
+  }
+
+  .enter-button {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    padding: 8px 16px; /* Adjust padding to fit smaller screens */
+  }
+}

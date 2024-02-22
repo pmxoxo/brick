@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=UnifrakturCook:wght@700&display=swap");
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Nunito Sans", sans-serif, "UnifrakturCook", cursive;
+  overflow: none;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  margin-left: 2rem;
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  color: #00FFA3;
+  font-family: "Nunito Sans", sans-serif, "UnifrakturCook", cursive;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center;
+  gap: 15px;
+  color: #00FFA3;
+}
+
+.connect-wallet-button {
+  margin-left: auto; /* Pushes the button to the right */
+  margin-right: 10px; /* Gap from the edge of the screen */
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.connect-wallet-button button {
+  font-family: "Nunito Sans", sans-serif, "UnifrakturCook", cursive;
+  background-color: #00FFA3;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.connect-wallet-button button:hover {
+  background-color: #00FFA3;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* Allow the navbar height to grow with content */
+    padding: 10px 0; /* Add padding on top and bottom of the navbar */
+  }
+  .navbar .logo,
+  .navbar .social-icons {
+    width: 100%; /* Full width of the navbar container */
+    justify-content: center; /* Center content */
+    margin: 0; /* Reset margins */
+    display: flex; /* Use flexbox to center content */
+    order: 1; /* Reset order for mobile */
+  }
+  .logo {
+    font-size: 0.75rem; /* Smaller font size for logo */
+    margin-left: 0; /* Remove left margin on mobile */
+    order: 1; /* Logo comes first */
+  }
+  .social-icons {
+    order: 2; /* Social icons come after logo */
+    margin-top: 10px; /* Add space between icons and logo */
+  }
+}
